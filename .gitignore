@@ -1,0 +1,7 @@
+# Ignore full datasets
+data/movies_dataset.csv
+data/movie_dataset_clean.csv
+data/movies_dataset_clean.csv
+
+# Optional: keep small sample for testing
+# data/movies_dataset_sample.csv
