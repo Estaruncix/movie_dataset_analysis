@@ -13,7 +13,7 @@ SELECT COUNT(DISTINCT movie_name) AS total_titles FROM movies;
 SELECT AVG(rating) AS avg_rating FROM movies;
 
 -- Number of movies per genre:
-SELECT genre, COUNT(*) AS num_movies
+SELECT genre, COUNT(DISTINCT movie_name) AS num_movies
 FROM movies
 GROUP BY genre
 ORDER BY num_movies DESC;
