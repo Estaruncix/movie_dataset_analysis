@@ -17,7 +17,7 @@ print(df.isnull().sum())
 
 # %%
 df_full = pd.read_csv(r"C:\Users\RositaRos\git_practice\movie_dataset_analysis\data\movies_dataset.csv")
-df_full = df.drop(columns = ['Unnamed: 0'])
+df_full = df.drop(columns=['Unnamed: 0'])
 df.to_csv(r"C:\Users\RositaRos\git_practice\movie_dataset_analysis\data\movies_dataset_clean.csv", index=False)
 
 
