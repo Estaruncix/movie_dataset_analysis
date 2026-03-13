@@ -2,7 +2,7 @@
 # %%
 import pandas as pd
 
-# %%
+# %%t
 df = pd.read_csv(r"C:\Users\RositaRos\git_practice\movie_dataset_analysis\data\movies_dataset.csv", nrows=1000) # importing sample to operate on
 # %%
 df = df.drop(columns=['Unnamed: 0'])  # clean up index column
@@ -15,11 +15,13 @@ print(df.columns)
 print(df.sample(5))
 print(df.isnull().sum())
 
-# %%
+# %%    
 df_full = pd.read_csv(r"C:\Users\RositaRos\git_practice\movie_dataset_analysis\data\movies_dataset.csv")
-df_full = df.drop(columns=['Unnamed: 0'])
-df.to_csv(r"C:\Users\RositaRos\git_practice\movie_dataset_analysis\data\movies_dataset_clean.csv", index=False)
+df_full = df_full.drop(columns=['Unnamed: 0'])
+df_full.to_csv(r"C:\Users\RositaRos\git_practice\movie_dataset_analysis\data\movies_dataset_clean.csv", index=False, encoding='utf-8-sig')
 
+# %%
+print(df_full.columns)
 
 # Interesting for future; chunking the dataset and showing a progress bar, this section has not been used.
 
